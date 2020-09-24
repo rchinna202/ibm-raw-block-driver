@@ -1,8 +1,7 @@
 #!/bin/bash
 
 
-cd /root/block-csi-driver
-
+cd /root
 
 #To check version
 oc version
