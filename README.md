@@ -13,6 +13,7 @@ Errors are seen if namespace other than default is used to install the operator:
 #oc apply -f ibm-block-csi-operator.yaml
 
 CSI Driver config:
+
 Create the secret file.
 
 #oc create -f array-secret.yaml
