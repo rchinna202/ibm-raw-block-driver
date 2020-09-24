@@ -1,0 +1,19 @@
+kind: StorageClass
+apiVersion: storage.k8s.io/v1
+metadata:
+  name: block-csi-storage
+provisioner: block.csi.ibm.com
+parameters:
+  #capabilities:                               # Optional
+  #  SpaceEfficiency=<VALUE>
+  #capacity:
+  pool: Pool0
+
+  csi.storage.k8s.io/provisioner-secret-name: array-secret
+  csi.storage.k8s.io/provisioner-secret-namespace: default
+  csi.storage.k8s.io/controller-publish-secret-name: array-secret
+  csi.storage.k8s.io/controller-publish-secret-namespace: default
+
+
+  #csi.storage.k8s.io/fstype: <FSTYPE>   # Optional. values ext4\xfs. The default is ext4.
+  #volume_name_prefix: <PREFIX>          # Optional
