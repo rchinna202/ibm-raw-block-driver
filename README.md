@@ -2,7 +2,7 @@
 
 https://www.ibm.com/support/knowledgecenter/SSRQ8T_1.2.0/csi_block_storage_kc_welcome.html
 
-Create a namespace for csi
+# Create a namespace for csi
 
 #oc create namespace csi
 
