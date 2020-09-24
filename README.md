@@ -1,6 +1,6 @@
 # IBM block storage CSI driver
 
-#https://www.ibm.com/support/knowledgecenter/SSRQ8T_1.2.0/csi_block_storage_kc_welcome.html
+https://www.ibm.com/support/knowledgecenter/SSRQ8T_1.2.0/csi_block_storage_kc_welcome.html
 
 Create a namespace for csi
 
@@ -10,7 +10,7 @@ Create a namespace for csi
 
 #oc create -f ibm-block-csi-operator.yaml -n csi
 
-# oc apply -f ibm-block-csi-operator.yaml
+#oc apply -f ibm-block-csi-operator.yaml
 
 # CSI Driver config:
 
