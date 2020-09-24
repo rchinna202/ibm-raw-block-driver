@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /root/block-csi-driver
+cd /root
 
 
 oc delete project csi
