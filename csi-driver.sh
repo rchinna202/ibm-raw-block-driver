@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-cd /root
+cd /root/ibm-raw-block-driver
 
 #To check version
 oc version
