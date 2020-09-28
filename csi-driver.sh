@@ -17,9 +17,6 @@ curl -L https://github.com/IBM/ibm-block-csi-operator/releases/download/v1.2.0/i
 oc create namespace csi
 
 
-#Verify the operator running.
-oc create -f ibm-block-csi-operator.yaml -n csi
-
 
 
 #Install the operator, while using a user-defined namespace.
