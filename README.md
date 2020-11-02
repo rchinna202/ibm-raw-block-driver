@@ -10,7 +10,6 @@ https://www.ibm.com/support/knowledgecenter/SSRQ8T_1.2.0/csi_ug_install_operator
 
 #oc create -f ibm-block-csi-operator.yaml -n csi
 
-#oc apply -f ibm-block-csi-operator.yaml
 
 ***CSI Driver config:***
 
