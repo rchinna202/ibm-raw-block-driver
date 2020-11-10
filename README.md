@@ -1,8 +1,8 @@
 ### IBM block storage CSI driver
 
-### Pre-requisites
+### step1:- Pre-requisites
 
-***step1:-*** Follow the documentation : https://www.ibm.com/support/knowledgecenter/SSRQ8T_1.2.0/csi_block_storage_kc_welcome.html and complete the below steps manually.
+Follow the documentation : https://www.ibm.com/support/knowledgecenter/SSRQ8T_1.2.0/csi_block_storage_kc_welcome.html and complete the below steps manually.
 
 Download the following files from GitHub location, on to ```/root```on the Bastion node.
 
@@ -23,6 +23,17 @@ csi.storage.k8s.io/provisioner-secret-namespace: <ARRAY_SECRET_NAMESPACE>
 csi.storage.k8s.io/controller-publish-secret-name: <ARRAY_SECRET>
 csi.storage.k8s.io/controller-publish-secret-namespace: <ARRAY_SECRET_NAMESPACE>
 ```
+### step2:- The actual execution of the script.
+
+a. Give the csi-driver.sh file permission.
+```
+chmod 777 csi.sh
+```
+b. Execute the script.
+```
+csi-driver.sh
+```
+
 ***step2:-*** verification steps
 
 After installing IBM block storage CSI driver, you need to verify if the installation is successful or not.
