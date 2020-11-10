@@ -1,33 +1,36 @@
-***IBM block storage CSI driver***
+### IBM block storage CSI driver
 
-https://www.ibm.com/support/knowledgecenter/SSRQ8T_1.2.0/csi_ug_install_operator_github.html
+### Pre-requisites
 
-***Create a namespace for csi***
+***step1:-*** Follow the documentation : https://www.ibm.com/support/knowledgecenter/SSRQ8T_1.2.0/csi_block_storage_kc_welcome.html and complete the below steps manually.
 
-```oc create namespace csi```
+Download the following files from GitHub location, on to ```/root```on the Bastion node.
 
-***Errors are seen if namespace other than default is used to install the operator:***
+a. Need to modify secret.yaml file
 
-```oc create -f ibm-block-csi-operator.yaml -n csi```
+Replace Array_USERNAME and Array_PASSWORD parameters of secret file with your PowerVC username and password encrypted in base 64 format. Use the following command to get base64 encrypted format. and also Update the  ```management_address``` :- provide the powervc storage ip address
 
+```
+$ base64 <<< <enter-your-powervc-username>
+$ base64 <<< <enter-your-powervc-password>
+```
 
-***CSI Driver config:***
+b.  Need to modify block-csi-storage.yaml 
 
-***Create the secret file.***
+```
+csi.storage.k8s.io/provisioner-secret-name: <ARRAY_SECRET>
+csi.storage.k8s.io/provisioner-secret-namespace: <ARRAY_SECRET_NAMESPACE>
+csi.storage.k8s.io/controller-publish-secret-name: <ARRAY_SECRET>
+csi.storage.k8s.io/controller-publish-secret-namespace: <ARRAY_SECRET_NAMESPACE>
+```
+***step2:-*** verification steps
 
-```oc create -f array-secret.yaml```
+After installing IBM block storage CSI driver, you need to verify if the installation is successful or not.
 
-***Create the storage class*** 
+Check the list of pods
 
-```oc apply -f block-csi-storage.yaml```
-
-***Creating PVC for volume.***
-
-```oc apply -f demo-pvc-file-system.yaml```
-
-***Creating PVC for raw block volume***
-
-```oc apply -f demo-pvc-raw-block.yaml```
-
+```
+oc get pods
+```
 
 
