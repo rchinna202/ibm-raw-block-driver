@@ -34,7 +34,7 @@ b. Execute the script.
 csi-driver.sh
 ```
 
-***step2:-*** verification steps
+### step2:-verification steps
 
 After installing IBM block storage CSI driver, you need to verify if the installation is successful or not.
 
