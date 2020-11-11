@@ -31,7 +31,7 @@ chmod 777 csi.sh
 ```
 b. Execute the script.
 ```
-csi-driver.sh
+./csi-driver.sh
 ```
 
 ### step2:-verification steps
