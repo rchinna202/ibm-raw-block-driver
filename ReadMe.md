@@ -27,7 +27,7 @@ csi.storage.k8s.io/controller-publish-secret-namespace: <ARRAY_SECRET_NAMESPACE>
 
 a. Give the csi-driver.sh file permission.
 ```
-chmod 777 csi.sh
+chmod 777 csi-driver.sh
 ```
 b. Execute the script.
 ```
