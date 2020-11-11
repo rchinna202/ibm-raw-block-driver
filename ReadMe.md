@@ -1,6 +1,6 @@
 ### IBM block storage CSI driver
 
-### step1:- Pre-requisites
+### step1:- Pre-requisites.
 
 Follow the documentation : https://www.ibm.com/support/knowledgecenter/SSRQ8T_1.2.0/csi_block_storage_kc_welcome.html and complete the below steps manually.
 
@@ -34,7 +34,7 @@ b. Execute the script.
 ./csi-driver.sh
 ```
 
-### step3:-verification steps
+### step3:-verification.
 
 After installing IBM block storage CSI driver, you need to verify if the installation is successful or not.
 
