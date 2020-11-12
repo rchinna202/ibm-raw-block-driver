@@ -11,12 +11,9 @@ oc version
 curl -L https://github.com/IBM/ibm-block-csi-operator/releases/download/v1.2.0/ibm-block-csi-operator-non-x86.yaml > ibm-block-csi-operator.yaml
 
 
-#Create a namespace for csi
-oc create namespace csi
-
 
 #Install the operator, while using a user-defined namespace.
-oc create -f ibm-block-csi-operator.yaml -n csi
+oc create -f ibm-block-csi-operator.yaml -n default
 if [ $? -eq 0 ]; then
         echo "ibm-block-csi-operator.yaml file installed successfully"
 else
