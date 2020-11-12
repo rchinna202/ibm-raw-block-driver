@@ -4,7 +4,6 @@
 
 Follow the documentation : https://www.ibm.com/support/knowledgecenter/SSRQ8T_1.2.0/csi_block_storage_kc_welcome.html and complete the below steps manually.
 
-Download the following files from GitHub location, on to ```/root```on the Bastion node.
 
 a. Need to modify secret.yaml file
 
