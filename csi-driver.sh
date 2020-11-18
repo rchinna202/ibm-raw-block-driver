@@ -44,7 +44,7 @@ oc create -f array-secret.yaml
 if [ $? -eq 0 ]; then
         echo "secret file created"
 else
-	echo "error while creating the secret"
+	echo "secret file does not created"
 fi
 
 
